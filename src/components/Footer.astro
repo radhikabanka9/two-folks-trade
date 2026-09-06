@@ -1,0 +1,69 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-white border-t border-slate-200 text-slate-600 pt-16 pb-12 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
+    <!-- Left Column: Bio -->
+    <div class="md:col-span-2 space-y-4">
+      <div class="flex items-center gap-3">
+        <img src="/images/logo.png" alt="Two Folks Logo" class="h-10 w-auto" />
+        <span class="font-extrabold text-base tracking-tight text-slate-900">TWO FOLKS</span>
+      </div>
+      <p class="text-sm leading-relaxed text-slate-500 max-w-sm">
+        An integrated distribution and cross-border trade enterprise connecting Indian manufacturers and global brands with dynamic consumer and commercial markets.
+      </p>
+      <div class="pt-2">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 text-slate-700">
+          <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Operations Active in Kochi, Bangalore & Pan-India
+        </span>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">Core Solutions</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a href="/distribution" class="hover:text-blue-600 transition-colors">B2B & HoReCa</a></li>
+        <li><a href="/distribution" class="hover:text-blue-600 transition-colors">Modern Trade & Retail</a></li>
+        <li><a href="/distribution" class="hover:text-blue-600 transition-colors">Quick Commerce</a></li>
+        <li><a href="/export-import" class="hover:text-blue-600 transition-colors">Export & Sourcing</a></li>
+        <li><a href="/export-import" class="hover:text-blue-600 transition-colors">Enter India Desk</a></li>
+      </ul>
+    </div>
+
+    <!-- Hubs -->
+    <div>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">Operating Hubs</h4>
+      <ul class="space-y-3 text-sm text-slate-500">
+        <li>Kochi Warehouse & Logistics Hub</li>
+        <li>Bangalore Regional Commercial Office</li>
+        <li>Thiruvananthapuram Distribution</li>
+        <li>Tamil Nadu Manufacturer Network</li>
+      </ul>
+    </div>
+
+    <!-- Direct CTA -->
+    <div>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">Trade Desk</h4>
+      <p class="text-xs text-slate-500 leading-relaxed mb-4">
+        Need distribution or cross-border logistics support for your catalog?
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block w-full text-center px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold text-xs rounded-lg transition-colors"
+      >
+        Contact Our Specialists
+      </a>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+    <p>© {year} Two Folks Global Trade House. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="/about" class="hover:text-slate-600">Company Overview</a>
+      <a href="/contact" class="hover:text-slate-600">Trade Enquiries</a>
+    </div>
+  </div>
+</footer>

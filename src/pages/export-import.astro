@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const eximSteps = [
+  { step: '01', title: 'Source', desc: 'Supplier identification, manufacturer coordination, and bulk procurement specifications.' },
+  { step: '02', title: 'Package', desc: 'Export packing standards, commercial labeling compliance, and shipment prep.' },
+  { step: '03', title: 'Document', desc: 'Commercial invoices, shipping bills, certificates of origin, and compliance paperwork.' },
+  { step: '04', title: 'Ship', desc: 'Freight forwarding, multi-modal transport coordination, and delivery scheduling.' },
+  { step: '05', title: 'Warehouse', desc: 'Storage, stock handling, cargo consolidation, and regional fulfillment via Kochi hub.' },
+  { step: '06', title: 'Distribute', desc: 'Connecting goods with retail channels, buyers, institutions, and consumers.' }
+];
+
+const pillars = [
+  {
+    title: 'Export: India to Global Markets',
+    badge: 'Outbound Trade',
+    description: 'We help Indian manufacturers, emerging brands, and MSMEs take products to international buyers with structured cross-border execution.',
+    points: [
+      'International buyer and distributor connections',
+      'Export packaging and compliant labeling',
+      'Customs documentation and trade compliance',
+      'Port-to-port and door-to-door freight coordination'
+    ]
+  },
+  {
+    title: 'Import: Enter India Desk',
+    badge: 'Inbound Trade & Market Entry',
+    description: 'A launchpad for overseas brands and MSMEs seeking to enter, establish, and grow sustainably across the Indian subcontinent.',
+    points: [
+      'Comprehensive India market viability study',
+      'Customs clearance and import documentation',
+      'Bonded and regional warehousing in Kochi',
+      'Integrated distribution across HoReCa and retail'
+    ]
+  }
+];
+---
+
+<BaseLayout title="Export & Import Services" description="Structured export and import solutions connecting Indian manufacturers and global brands.">
+  <!-- Hero Section -->
+  <section class="bg-[#0F1E36] text-white py-20 px-6 text-center border-b border-[#B38A4B]/30">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block px-3 py-1 bg-[#B38A4B]/20 border border-[#B38A4B]/40 text-[#B38A4B] text-xs font-semibold uppercase tracking-widest rounded-full mb-4">
+        Global Trade Desk
+      </span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">
+        Connecting Indian & Global Markets
+      </h1>
+      <p class="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+        Two Folks Global Trade House provides end-to-end export and import solutions for manufacturers, MSMEs, brands, and bulk buyers with disciplined execution and compliance clarity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Process Pipeline -->
+  <section class="py-16 max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs uppercase font-bold tracking-widest text-[#B38A4B] block mb-2">How We Execute</span>
+      <h2 class="text-3xl font-serif font-bold text-[#0F1E36]">The EXIM Process Pipeline</h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      {eximSteps.map((item) => (
+        <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xl font-bold font-serif text-[#B38A4B] block mb-2">{item.step}</span>
+            <h3 class="text-base font-bold text-[#0F1E36] mb-2">{item.title}</h3>
+            <p class="text-gray-600 text-xs leading-relaxed">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Dual Corridors: Export & Import -->
+  <section class="bg-[#F4EFE6] py-20 px-6 border-y border-[#B38A4B]/20">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">Two-Way Trade Corridors</h2>
+        <p class="text-gray-600 text-sm">Whether navigating outbound shipments or entering the Indian commercial landscape.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        {pillars.map((pillar) => (
+          <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-[#B38A4B] uppercase tracking-wider block mb-2">{pillar.badge}</span>
+              <h3 class="text-2xl font-serif font-bold text-[#0F1E36] mb-4">{pillar.title}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">{pillar.description}</p>
+              
+              <ul class="space-y-3 mb-8">
+                {pillar.points.map((pt) => (
+                  <li class="text-xs text-gray-700 flex items-start gap-2">
+                    <span class="text-[#B38A4B] font-bold">✓</span>
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-gray-100">
+              <a href="/contact" class="text-xs font-bold uppercase tracking-wider text-[#0F1E36] hover:text-[#B38A4B] flex items-center gap-1 transition-colors">
+                Inquire For This Desk &rarr;
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Launchpad for MSMEs Section -->
+  <section class="py-20 max-w-5xl mx-auto px-6 text-center">
+    <span class="text-xs uppercase font-bold tracking-widest text-[#B38A4B] block mb-2">Cross-Border Scale</span>
+    <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-4">Supporting Businesses of Different Scales</h2>
+    <p class="text-gray-600 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+      From emerging MSMEs and local artisanal manufacturers to global FMCG enterprises, we customize documentation, shipping schedules, and warehousing allocations to match your scale.
+    </p>
+
+    <div class="bg-[#0F1E36] text-white p-8 md:p-10 rounded-xl text-left flex flex-col md:flex-row items-center justify-between gap-6 border border-[#B38A4B]/30">
+      <div>
+        <h4 class="text-xl font-serif font-bold mb-2">Ready to ship or expand into India?</h4>
+        <p class="text-xs text-gray-300">Speak with our trade specialists regarding customs, logistics, and channel distribution.</p>
+      </div>
+      <a href="/contact" class="bg-[#B38A4B] hover:bg-[#D4AF37] text-[#0F1E36] font-bold px-6 py-3 rounded text-sm whitespace-nowrap transition-all">
+        Initiate Trade Dialogue
+      </a>
+    </div>
+  </section>
+</BaseLayout>

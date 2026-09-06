@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const timeline = [
+  {
+    year: '2021',
+    title: 'The Beginning',
+    desc: 'Two Folks Global Trade House began its journey in Tamil Nadu, supporting MSMEs and manufacturers through distribution, trade, sales, and supply-chain capabilities.'
+  },
+  {
+    year: '2024',
+    title: 'Expanding into Food & FMCG',
+    desc: 'Partnered with Mannan, a manufacturer of coconut-based products, strengthening our presence in the food and FMCG sector and expanding domestic and international trade capabilities.'
+  },
+  {
+    year: '2025',
+    title: 'Kochi Operations & HoReCa',
+    desc: 'Established our warehouse and operations in Kochi, Kerala, expanding into the HoReCa sector serving Kochi and Thiruvananthapuram. Developed Folks Mobility to strengthen logistics capabilities.'
+  },
+  {
+    year: '2026',
+    title: 'Bangalore & Retail Expansion',
+    desc: 'Expanded operations into Bangalore and launched Folks Retail, extending reach across modern trade, e-commerce, and quick commerce in Kochi and Bangalore.'
+  }
+];
+
+const values = [
+  { title: 'Commitment', desc: 'We take ownership of our commitments and deliver with accountability.' },
+  { title: 'Professionalism', desc: 'We maintain high standards across communication, documentation, commercial dealings, and execution.' },
+  { title: 'Documentation', desc: 'Structured documentation and processes support smoother, more reliable trade operations.' },
+  { title: 'Integrated Supply Chain', desc: 'Connected sourcing, inventory, warehousing, distribution, and logistics create a coordinated supply chain.' },
+  { title: 'Quality Control', desc: 'We maintain strong attention to product quality, handling, process discipline, and appropriate checks throughout the supply chain.' },
+  { title: 'Adaptability', desc: 'We remain flexible and responsive, adapting our approach to changing markets, regulations, and business conditions.' }
+];
+---
+
+<BaseLayout title="About Us" description="Learn about Two Folks Global Trade House, our mission, vision, and journey connecting products with markets.">
+  <!-- Hero Section -->
+  <section class="bg-[#0F1E36] text-white py-20 px-6 text-center border-b border-[#B38A4B]/30">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block px-3 py-1 bg-[#B38A4B]/20 border border-[#B38A4B]/40 text-[#B38A4B] text-xs font-semibold uppercase tracking-widest rounded-full mb-4">
+        Our Story & Mission
+      </span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">About Two Folks Global Trade House</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+        Connecting great products with the right markets through reliable trade, structured distribution, and disciplined execution.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="py-16 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#B38A4B] block mb-2">Our Purpose</span>
+      <h2 class="text-2xl font-serif font-bold text-[#0F1E36] mb-4">Mission</h2>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        To simplify distribution and international trade by creating reliable, efficient routes between manufacturers, brands, and markets.
+      </p>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Through disciplined execution across documentation, warehousing, supply chain, sales, distribution, and logistics, we take responsibility for the complexities involved in moving products across markets.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#B38A4B] block mb-2">Our Aspiration</span>
+      <h2 class="text-2xl font-serif font-bold text-[#0F1E36] mb-4">Vision</h2>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        To build a trusted global distribution and trade network connecting great products, manufacturers, brands, and markets across India and the world.
+      </p>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        We strive to create an integrated ecosystem through which businesses can access distribution, export, import, warehousing, logistics, and market channels through one trusted network.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ecosystem / Capabilities Section -->
+  <section class="bg-[#F4EFE6] py-16 px-6 border-y border-[#B38A4B]/20">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">Our Integrated Capabilities</h2>
+        <p class="text-gray-600 text-sm">Every capability required to take a product smoothly from manufacturer to shelf.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <span class="text-[#B38A4B] font-bold block mb-1 text-base">01</span>
+          <h4 class="font-bold text-[#0F1E36] text-sm">Supply Chain</h4>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <span class="text-[#B38A4B] font-bold block mb-1 text-base">02</span>
+          <h4 class="font-bold text-[#0F1E36] text-sm">Warehousing</h4>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <span class="text-[#B38A4B] font-bold block mb-1 text-base">03</span>
+          <h4 class="font-bold text-[#0F1E36] text-sm">Sales Execution</h4>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200">
+          <span class="text-[#B38A4B] font-bold block mb-1 text-base">04</span>
+          <h4 class="font-bold text-[#0F1E36] text-sm">Logistics</h4>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-gray-200 col-span-2 md:col-span-1">
+          <span class="text-[#B38A4B] font-bold block mb-1 text-base">05</span>
+          <h4 class="font-bold text-[#0F1E36] text-sm">Documentation</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section class="py-20 max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#B38A4B] block mb-2">Milestones</span>
+      <h2 class="text-3xl font-serif font-bold text-[#0F1E36]">Our Journey</h2>
+    </div>
+
+    <div class="relative border-l-2 border-[#B38A4B]/40 ml-4 md:ml-8 space-y-12 pl-6 md:pl-8">
+      {timeline.map((item) => (
+        <div class="relative">
+          <!-- Bullet dot -->
+          <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-[#0F1E36] border-2 border-[#B38A4B]"></div>
+          
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <span class="text-sm font-bold text-[#B38A4B] tracking-wider uppercase block mb-1">{item.year}</span>
+            <h3 class="text-lg font-serif font-bold text-[#0F1E36] mb-2">{item.title}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Core Values / What Sets Us Apart -->
+  <section class="bg-white py-16 px-6 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">What Sets Us Apart</h2>
+        <p class="text-gray-600 text-sm">Built on Trust. Driven by Execution.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {values.map(val => (
+          <div class="p-6 rounded-lg bg-[#FAF8F5] border border-gray-200">
+            <h4 class="font-serif font-bold text-[#0F1E36] mb-2">{val.title}</h4>
+            <p class="text-gray-600 text-xs leading-relaxed">{val.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

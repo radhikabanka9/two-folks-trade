@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Modern clean color system */
+  --color-brand-primary: #0B192C;     /* Deep slate blue */
+  --color-brand-accent: #2563EB;      /* Vibrant modern royal blue */
+  --color-brand-accent-hover: #1D4ED8;
+  --color-brand-gold: #D97706;        /* Subtle warm amber/gold for badge accents */
+  --color-brand-bg: #F8FAFC;          /* Crisp cool off-white */
+  --color-brand-card: #FFFFFF;
+  --color-brand-border: #E2E8F0;
+  --color-brand-muted: #64748B;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: #0F172A;
+  letter-spacing: -0.01em;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

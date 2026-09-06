@@ -1,11 +1,196 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pillars = [
+  {
+    title: 'Distribution',
+    tag: 'Domestic Growth',
+    desc: 'End-to-end route to market across South India covering B2B foodservice, modern trade supermarkets, and quick commerce platforms.',
+    points: ['Kochi Central Fulfillment Hub', 'Direct HoReCa Commercial Supply', 'High-Fill Rate Modern Trade'],
+    link: '/distribution'
+  },
+  {
+    title: 'Global Export',
+    tag: 'India to World',
+    desc: 'Enabling Indian MSMEs and food manufacturers to scale globally with comprehensive trade documentation and freight management.',
+    points: ['Product Sourcing & Specs', 'Export Packaging & Labeling', 'Port & Customs Documentation'],
+    link: '/export-import'
+  },
+  {
+    title: 'Import Desk',
+    tag: 'Enter India',
+    desc: 'A complete landing platform for overseas brands seeking structured entry, warehousing, and commercial distribution across India.',
+    points: ['Market Viability Assessment', 'Import Compliance & Clearance', 'Regional Channel Placement'],
+    link: '/export-import'
+  }
+];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Two Folks Global Trade House | Connecting Products with Markets">
+  <!-- Modern Hero Section -->
+  <section class="relative overflow-hidden pt-20 pb-28 md:pt-28 md:pb-36 bg-gradient-to-b from-white via-slate-50 to-slate-100/60 border-b border-slate-200/60">
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      
+      <!-- Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-8 shadow-xs">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+        Distribution • Export • Import
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6 max-w-4xl mx-auto">
+        Connecting Great Products with the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Right Markets</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+        Two Folks is an integrated trade and distribution house. We simplify supply chains, eliminate friction, and build dependable routes from factory floor to retail shelf.
+      </p>
+
+      <!-- Primary Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="/distribution" 
+          class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-blue-600 text-white font-semibold text-sm rounded-full shadow-sm hover:shadow-lg transition-all text-center"
+        >
+          Explore Distribution Solutions
+        </a>
+        <a 
+          href="/export-import" 
+          class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 font-semibold text-sm rounded-full border border-slate-200 shadow-xs hover:border-slate-300 transition-all text-center"
+        >
+          Export & Import Desks
+        </a>
+      </div>
+
+      <!-- Key Stat Highlights Bar -->
+      <div class="mt-16 pt-10 border-t border-slate-200/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+        <div>
+          <span class="block text-2xl md:text-3xl font-extrabold text-slate-900">4+</span>
+          <span class="text-xs text-slate-500 font-medium">Core Operating Regions</span>
+        </div>
+        <div>
+          <span class="block text-2xl md:text-3xl font-extrabold text-slate-900">100%</span>
+          <span class="text-xs text-slate-500 font-medium">Integrated Supply Chain</span>
+        </div>
+        <div>
+          <span class="block text-2xl md:text-3xl font-extrabold text-slate-900">HoReCa</span>
+          <span class="text-xs text-slate-500 font-medium">& Quick Commerce Reach</span>
+        </div>
+        <div>
+          <span class="block text-2xl md:text-3xl font-extrabold text-slate-900">EXIM</span>
+          <span class="text-xs text-slate-500 font-medium">Cross-Border Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Cards Section -->
+  <section class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Our Capabilities</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Three Pillars of Execution</h2>
+      <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+        Whether expanding into South India or shipping across borders, we provide the infrastructure and execution needed to scale.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {pillars.map((pillar) => (
+        <div class="group bg-white p-8 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-700 group-hover:bg-blue-50 group-hover:text-blue-700 transition-colors">
+                {pillar.tag}
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+              {pillar.title}
+            </h3>
+            
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              {pillar.desc}
+            </p>
+
+            <ul class="space-y-2.5 mb-8 border-t border-slate-100 pt-6">
+              {pillar.points.map((pt) => (
+                <li class="text-xs font-medium text-slate-600 flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-blue-600"></span>
+                  {pt}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <a 
+              href={pillar.link} 
+              class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-slate-900 group-hover:text-blue-600 transition-colors"
+            >
+              Learn More <span class="ml-1 transition-transform group-hover:translate-x-1">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Connected Ecosystem Pipeline Flow -->
+  <section class="py-20 bg-slate-900 text-white px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-400 block mb-2">Connected Flow</span>
+        <h2 class="text-3xl font-extrabold tracking-tight">The Route From Source to Shelf</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="p-6 rounded-xl bg-slate-800/80 border border-slate-700 text-center">
+          <span class="text-xs font-bold text-blue-400 block mb-1">STEP 01</span>
+          <h4 class="font-bold text-base mb-1">Manufacturer</h4>
+          <p class="text-xs text-slate-400">Production & Quality Sourcing</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-800/80 border border-slate-700 text-center">
+          <span class="text-xs font-bold text-blue-400 block mb-1">STEP 02</span>
+          <h4 class="font-bold text-base mb-1">Two Folks</h4>
+          <p class="text-xs text-slate-400">Trade & Channel Governance</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-800/80 border border-slate-700 text-center">
+          <span class="text-xs font-bold text-blue-400 block mb-1">STEP 03</span>
+          <h4 class="font-bold text-base mb-1">Warehousing</h4>
+          <p class="text-xs text-slate-400">Kochi Multi-Stock Hub</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-800/80 border border-slate-700 text-center">
+          <span class="text-xs font-bold text-blue-400 block mb-1">STEP 04</span>
+          <h4 class="font-bold text-base mb-1">Logistics</h4>
+          <p class="text-xs text-slate-400">Folks Mobility & Delivery</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-blue-600 text-white text-center shadow-lg">
+          <span class="text-xs font-bold text-blue-200 block mb-1">STEP 05</span>
+          <h4 class="font-bold text-base mb-1">Consumer Market</h4>
+          <p class="text-xs text-blue-100">B2B, Retail & Platforms</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Action Banner -->
+  <section class="py-20 bg-white px-6">
+    <div class="max-w-4xl mx-auto rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-700 p-10 md:p-14 text-white text-center shadow-xl">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Ready to expand your product distribution?</h2>
+      <p class="text-blue-100 text-sm md:text-base max-w-xl mx-auto mb-8 leading-relaxed">
+        Let’s connect your product catalog with commercial kitchens, supermarkets, and international buyers.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block px-8 py-3.5 bg-white hover:bg-slate-100 text-blue-900 font-bold text-sm rounded-full shadow transition-all active:scale-95"
+      >
+        Start a Conversation
+      </a>
+    </div>
+  </section>
+</BaseLayout>

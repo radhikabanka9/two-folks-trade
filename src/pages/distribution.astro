@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const channels = [
+  {
+    title: 'Modern Trade Distribution',
+    subtitle: 'Supermarkets | Hypermarkets | Organised Retail',
+    description: 'We help brands build presence across modern trade and organised retail through dedicated account management, joint business planning, store merchandising, and planogram visibility.'
+  },
+  {
+    title: 'E-commerce & Quick Commerce',
+    subtitle: 'Amazon | Flipkart | BigBasket | Swiggy & More',
+    description: 'Digital distribution combining catalog listing, account coordination, demand forecasting, quick commerce replenishment, and high fill-rate management.'
+  },
+  {
+    title: 'B2B & HoReCa Distribution',
+    subtitle: 'Hotels | Restaurants | Cafes | Institutional Supply',
+    description: 'Reliable supply lines for commercial kitchens, catering companies, and food-service operators across Kochi, Thiruvananthapuram, and Bangalore with bulk order fulfillment.'
+  }
+];
+
+const infrastructure = [
+  {
+    title: 'Supply Chain Management',
+    points: ['Demand planning and forecasting', 'Inventory planning and management', 'Order management and fulfillment', 'Last-mile delivery coordination']
+  },
+  {
+    title: 'Kochi Warehousing Hub',
+    points: ['Strategic facility in Kochi, Kerala', 'Multi-category inventory storage', 'Regional dispatch and stock coordination', 'Scalable support for emerging manufacturers']
+  },
+  {
+    title: 'Technology & Logistics',
+    points: ['Route optimization and delivery scheduling', 'Live order and consignment tracking', 'Cost-efficient logistics coordination', 'Timely delivery management']
+  },
+  {
+    title: 'Regulatory & Documentation',
+    points: ['Distribution and compliance documentation', 'Regulatory process coordination', 'Trade compliance management', 'Structured process records']
+  }
+];
+---
+
+<BaseLayout title="Distribution Solutions" description="End-to-end distribution solutions across Kerala, South India, and pan-India channels.">
+  <!-- Hero Section -->
+  <section class="bg-[#0F1E36] text-white py-20 px-6 text-center border-b border-[#B38A4B]/30">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block px-3 py-1 bg-[#B38A4B]/20 border border-[#B38A4B]/40 text-[#B38A4B] text-xs font-semibold uppercase tracking-widest rounded-full mb-4">
+        Kerala & South India Hub
+      </span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">
+        Reliable Distribution Solutions for Brands & Manufacturers
+      </h1>
+      <p class="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+        Two Folks Global Trade House connects products with the right customers and sales channels through an integrated network covering supply chain management, warehousing, sales, and logistics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Distribution Flow -->
+  <section class="bg-[#F4EFE6] py-10 px-6 border-b border-[#B38A4B]/20 text-center">
+    <div class="max-w-5xl mx-auto">
+      <span class="text-xs uppercase font-bold tracking-widest text-[#B38A4B] block mb-2">The Distribution Pipeline</span>
+      <p class="text-sm md:text-base font-semibold text-[#0F1E36]">
+        Manufacturer &rarr; Two Folks &rarr; Warehouse &rarr; Sales & Distribution &rarr; Market
+      </p>
+    </div>
+  </section>
+
+  <!-- Sales Channels -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">Multi-Channel Market Reach</h2>
+      <p class="text-gray-600 text-sm">We place products across modern retail, institutional foodservice, and digital commerce.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {channels.map((channel) => (
+        <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between hover:border-[#B38A4B] transition-all">
+          <div>
+            <span class="text-[11px] font-bold text-[#B38A4B] uppercase tracking-wider block mb-2">{channel.subtitle}</span>
+            <h3 class="text-xl font-serif font-bold text-[#0F1E36] mb-4">{channel.title}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">{channel.description}</p>
+          </div>
+          <div class="pt-4 border-t border-gray-100">
+            <span class="text-xs font-semibold text-[#0F1E36] flex items-center gap-1">
+              Active Channel Support &rarr;
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Supply Chain & Infrastructure -->
+  <section class="bg-white py-20 px-6 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">Infrastructure & Operations</h2>
+        <p class="text-gray-600 text-sm">A dependable backbone powering inventory movements across South India.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {infrastructure.map((block) => (
+          <div class="p-6 rounded-lg bg-[#FAF8F5] border border-gray-200">
+            <h4 class="font-serif font-bold text-[#0F1E36] mb-4 text-base">{block.title}</h4>
+            <ul class="space-y-2.5">
+              {block.points.map((pt) => (
+                <li class="text-gray-600 text-xs flex items-start gap-2">
+                  <span class="text-[#B38A4B] font-bold mt-0.5">•</span>
+                  <span>{pt}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-[#0F1E36] text-white text-center px-6">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-serif font-bold mb-4">Looking to Expand Your Product Reach?</h3>
+      <p class="text-gray-300 text-sm mb-8">
+        Partner with our distribution network to get your products placed in front of qualified buyers and retail outlets.
+      </p>
+      <a href="/contact" class="inline-block bg-[#B38A4B] hover:bg-[#D4AF37] text-[#0F1E36] font-bold px-6 py-3 rounded transition-all">
+        Discuss Distribution Opportunities
+      </a>
+    </div>
+  </section>
+</BaseLayout>
