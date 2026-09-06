@@ -10,22 +10,22 @@ const eximSteps = [
   { step: '06', title: 'Distribute', desc: 'Connecting goods with retail channels, buyers, institutions, and consumers.' }
 ];
 
-const pillars = [
+const corridors = [
   {
     title: 'Export: India to Global Markets',
-    badge: 'Outbound Trade',
+    badge: 'Outbound Desk',
     description: 'We help Indian manufacturers, emerging brands, and MSMEs take products to international buyers with structured cross-border execution.',
     points: [
       'International buyer and distributor connections',
       'Export packaging and compliant labeling',
       'Customs documentation and trade compliance',
-      'Port-to-port and door-to-door freight coordination'
+      'Port-to-port freight coordination'
     ]
   },
   {
     title: 'Import: Enter India Desk',
-    badge: 'Inbound Trade & Market Entry',
-    description: 'A launchpad for overseas brands and MSMEs seeking to enter, establish, and grow sustainably across the Indian subcontinent.',
+    badge: 'Inbound Market Entry',
+    description: 'A dedicated launchpad for overseas brands and MSMEs seeking to enter, establish, and grow sustainably across the Indian market.',
     points: [
       'Comprehensive India market viability study',
       'Customs clearance and import documentation',
@@ -36,71 +36,74 @@ const pillars = [
 ];
 ---
 
-<BaseLayout title="Export & Import Services" description="Structured export and import solutions connecting Indian manufacturers and global brands.">
+<BaseLayout title="Export & Import Services | Two Folks Global Trade House">
   <!-- Hero Section -->
-  <section class="bg-[#0F1E36] text-white py-20 px-6 text-center border-b border-[#B38A4B]/30">
-    <div class="max-w-4xl mx-auto">
-      <span class="inline-block px-3 py-1 bg-[#B38A4B]/20 border border-[#B38A4B]/40 text-[#B38A4B] text-xs font-semibold uppercase tracking-widest rounded-full mb-4">
-        Global Trade Desk
-      </span>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">
-        Connecting Indian & Global Markets
+  <section class="relative overflow-hidden pt-16 pb-20 md:pt-24 md:pb-28 bg-gradient-to-b from-white via-slate-50 to-slate-100/60 border-b border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+        Cross-Border Trade Desk
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+        Connecting Indian & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Global Markets</span>
       </h1>
-      <p class="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-        Two Folks Global Trade House provides end-to-end export and import solutions for manufacturers, MSMEs, brands, and bulk buyers with disciplined execution and compliance clarity.
+      <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Two Folks Global Trade House provides structured export and import services for manufacturers, MSMEs, brands, and bulk buyers with dependable trade execution.
       </p>
     </div>
   </section>
 
-  <!-- Process Pipeline -->
-  <section class="py-16 max-w-6xl mx-auto px-6">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-xs uppercase font-bold tracking-widest text-[#B38A4B] block mb-2">How We Execute</span>
-      <h2 class="text-3xl font-serif font-bold text-[#0F1E36]">The EXIM Process Pipeline</h2>
+  <!-- Process Steps -->
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Execution Pipeline</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">The EXIM Process</h2>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
       {eximSteps.map((item) => (
-        <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-xs hover:border-blue-200 transition-all flex flex-col justify-between">
           <div>
-            <span class="text-xl font-bold font-serif text-[#B38A4B] block mb-2">{item.step}</span>
-            <h3 class="text-base font-bold text-[#0F1E36] mb-2">{item.title}</h3>
-            <p class="text-gray-600 text-xs leading-relaxed">{item.desc}</p>
+            <span class="text-xs font-bold text-blue-600 block mb-2">{item.step}</span>
+            <h3 class="text-base font-bold text-slate-900 mb-2">{item.title}</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
           </div>
         </div>
       ))}
     </div>
   </section>
 
-  <!-- Dual Corridors: Export & Import -->
-  <section class="bg-[#F4EFE6] py-20 px-6 border-y border-[#B38A4B]/20">
+  <!-- Two-Way Corridors -->
+  <section class="py-20 bg-slate-50 border-y border-slate-200/80 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-3">Two-Way Trade Corridors</h2>
-        <p class="text-gray-600 text-sm">Whether navigating outbound shipments or entering the Indian commercial landscape.</p>
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Trade Corridors</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Outbound Export & Inbound Import</h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8">
-        {pillars.map((pillar) => (
-          <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between">
+        {corridors.map((corridor) => (
+          <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between hover:border-blue-200 transition-all">
             <div>
-              <span class="text-xs font-bold text-[#B38A4B] uppercase tracking-wider block mb-2">{pillar.badge}</span>
-              <h3 class="text-2xl font-serif font-bold text-[#0F1E36] mb-4">{pillar.title}</h3>
-              <p class="text-gray-600 text-sm leading-relaxed mb-6">{pillar.description}</p>
+              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-50 text-blue-700 inline-block mb-4">
+                {corridor.badge}
+              </span>
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">{corridor.title}</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">{corridor.description}</p>
               
-              <ul class="space-y-3 mb-8">
-                {pillar.points.map((pt) => (
-                  <li class="text-xs text-gray-700 flex items-start gap-2">
-                    <span class="text-[#B38A4B] font-bold">✓</span>
+              <ul class="space-y-3 mb-8 border-t border-slate-100 pt-6">
+                {corridor.points.map((pt) => (
+                  <li class="text-xs text-slate-700 flex items-start gap-2.5 font-medium">
+                    <span class="h-1.5 w-1.5 rounded-full bg-blue-600 mt-1 flex-shrink-0"></span>
                     <span>{pt}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div class="pt-4 border-t border-gray-100">
-              <a href="/contact" class="text-xs font-bold uppercase tracking-wider text-[#0F1E36] hover:text-[#B38A4B] flex items-center gap-1 transition-colors">
-                Inquire For This Desk &rarr;
+            <div class="pt-4 border-t border-slate-100">
+              <a href="/contact" class="text-xs font-bold uppercase tracking-wider text-slate-900 hover:text-blue-600 transition-colors">
+                Connect With This Desk &rarr;
               </a>
             </div>
           </div>
@@ -109,20 +112,17 @@ const pillars = [
     </div>
   </section>
 
-  <!-- Launchpad for MSMEs Section -->
-  <section class="py-20 max-w-5xl mx-auto px-6 text-center">
-    <span class="text-xs uppercase font-bold tracking-widest text-[#B38A4B] block mb-2">Cross-Border Scale</span>
-    <h2 class="text-3xl font-serif font-bold text-[#0F1E36] mb-4">Supporting Businesses of Different Scales</h2>
-    <p class="text-gray-600 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
-      From emerging MSMEs and local artisanal manufacturers to global FMCG enterprises, we customize documentation, shipping schedules, and warehousing allocations to match your scale.
-    </p>
-
-    <div class="bg-[#0F1E36] text-white p-8 md:p-10 rounded-xl text-left flex flex-col md:flex-row items-center justify-between gap-6 border border-[#B38A4B]/30">
-      <div>
-        <h4 class="text-xl font-serif font-bold mb-2">Ready to ship or expand into India?</h4>
-        <p class="text-xs text-gray-300">Speak with our trade specialists regarding customs, logistics, and channel distribution.</p>
-      </div>
-      <a href="/contact" class="bg-[#B38A4B] hover:bg-[#D4AF37] text-[#0F1E36] font-bold px-6 py-3 rounded text-sm whitespace-nowrap transition-all">
+  <!-- MSME Scale Callout -->
+  <section class="py-20 bg-white px-6">
+    <div class="max-w-4xl mx-auto rounded-3xl bg-slate-900 p-10 md:p-14 text-white text-center shadow-xl">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Supporting Businesses of Different Scales</h2>
+      <p class="text-slate-400 text-sm md:text-base max-w-xl mx-auto mb-8 leading-relaxed">
+        From emerging MSMEs and local artisanal manufacturers to global FMCG enterprises, we customize documentation, shipping schedules, and warehousing allocations to match your scale.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm rounded-full shadow transition-all active:scale-95"
+      >
         Initiate Trade Dialogue
       </a>
     </div>
